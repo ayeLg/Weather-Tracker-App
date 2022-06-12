@@ -2,7 +2,7 @@
 
     $db_user = 'root';
     $db_password = '';
-    $db_name = 'php_api_jwt';
+    $db_name = 'weather_tracker_app';
 
     $db = new PDO('mysql:host=localhost;dbname='.$db_name.';charset=utf8',$db_user,$db_password);
 
