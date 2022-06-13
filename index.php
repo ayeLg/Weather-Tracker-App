@@ -55,6 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     ];
                     $secret_key = "D9DC05EE4A5E57F008BBEB2D8BF1010F1DCD675E42427DCFC2D7AA823DA83DC3";
                     $jwt = JWT::encode($payload, $secret_key, 'HS256');
+
                     if (isset($jwt)) {
 
                         $_SESSION['JWT'] = $jwt;
